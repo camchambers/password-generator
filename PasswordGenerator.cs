@@ -18,10 +18,24 @@ namespace password_generator
 {
     class PasswordGenerator
     {
+        private string passwordCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFG" +
+                  "HIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&*()-_=+[]{}\\|;:'\",<" +
+                  ".>/?";
 
         public PasswordGenerator()
         {
+            Console.WriteLine("Password generator loaded.");
             var rng = new RNGCryptoServiceProvider();
+        }
+
+        public string Generate()
+        {
+            return string.Empty;
+        }
+
+        public char randomCharacter()
+        {
+            return '0';
         }
 
     }

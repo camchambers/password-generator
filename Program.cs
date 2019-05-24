@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Reference: https://www.codeproject.com/Articles/2393/A-C-Password-Generator
+
+using System;
 
 namespace password_generator
 {
@@ -6,9 +8,7 @@ namespace password_generator
     {
         static void Main(string[] args)
         {
-
             PasswordGenerator passwordGenerator = new PasswordGenerator();
-
         }
     }
 }
