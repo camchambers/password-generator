@@ -1,5 +1,3 @@
-﻿// Reference: https://www.codeproject.com/Articles/2393/A-C-Password-Generator
-
 using System;
 
 namespace password_generator
