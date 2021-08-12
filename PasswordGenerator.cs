@@ -7,7 +7,6 @@ namespace password_generator
 {
     class PasswordGenerator
     {
-
         public string GeneratePassword()
         {
             var randomNumberGenerator = new RNGCryptoServiceProvider();
@@ -36,7 +35,6 @@ namespace password_generator
             // the password to generate
             for (int i = 0; i < passwordSize; i++)
             {
-
                 // Fill the randomNumber byte array with random numbers 
                 randomNumberGenerator.GetBytes(randomNumber);
 
@@ -53,7 +51,6 @@ namespace password_generator
 
                 // Add our character to the password buffer
                 passwordBuffer.Append(resultChar);
-
             }
 
             // RNGCryptoServiceProvider implements the IDisposable interface
@@ -61,9 +58,6 @@ namespace password_generator
             randomNumberGenerator.Dispose();
 
             return passwordBuffer.ToString();
-
         }
-
     }
-
 }
